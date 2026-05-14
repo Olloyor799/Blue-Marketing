@@ -1,0 +1,411 @@
+@import url(./fonts.css);
+
+:root {
+    --blue_1: #3FA5D5;
+    --blue_2: #2A86B1;
+    --rubik: "Rubik";
+    --body: #F1F1F1;
+    --white: #ffffff;
+    --text: #464748;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: block;
+    padding: 7px 62px;
+    background-color: var(--blue_1);
+    width: max-content;
+    color: var(--white);
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.30);
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--blue_2);
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--rubik);
+    background-color: var(--body);
+    color: var(--text);
+    font-size: 16px;
+    font-family: 400;
+
+}
+
+.header-content { 
+    width: 100%;
+    height: 500px;
+    background-image: url("./image/bg.png");
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.931);
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin-top: 40px;
+    padding-left: 62px;
+    z-index: 0;
+    } 
+/*  */
+/* .header-title { */
+    /* z-index: 1; */
+    /* width: 100%; */
+    /* position: relative  ; */
+    /* font-family: "Rubik"; */
+    /* font-weight: 700; */
+    /* font-size: 50px; */
+    /* color: var(--text); */
+    /* margin-bottom: 25px; */
+    /* max-width: 332px; */
+    /* width: 100%; */
+/* } */
+/*  */
+/* .header-text { */
+    /* z-index: 1; */
+    /* font-family: "Rubik"; */
+    /* font-weight: 400px; */
+    /* font-size: 16px; */
+    /* width: 314px; */
+    /* height: 76px; */
+    /* text-align: justify; */
+    /* color: var(justify); */
+    /* color: var(--text); */
+    /* margin-bottom: 32px; */
+/* } */
+/*  */
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 62px;
+    margin-top: 40px;
+}
+
+.header-content::before {
+    content: "";
+
+  background-image: url("../image/bg.png");
+
+}
+
+
+.header-content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+
+    z-index: 1;
+}
+
+.header-title
+.header-text,
+.header-btn {
+    position: relative;
+    z-index: 0;
+}
+.header-title {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--text);
+    margin-bottom: 25px;
+    max-width: 332px;
+}
+
+.header-text {
+    font-family: "Rubik";
+    font-size: 16px;
+    width: 314px;
+    text-align: justify;
+    color: var(--text);
+    margin-bottom: 32px;
+}
+.service {
+    margin-bottom: 30px;
+    margin-top: 48px;
+}
+
+.service__contnet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__card {
+    width: 255px;
+    height: 338px;
+    background-color: var(--white);
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 19px;
+    color: var(--blue_1);
+    padding-top: 32px;
+    display: flex;
+}
+.card__title {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.card__icon {
+    margin-bottom: 70px;
+}
+
+
+.card__icon2 {
+    padding-bottom: 66px;
+}
+
+.card__title2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card__icon3 {
+    padding-bottom: 80px;
+}
+
+.card__title3 {
+    padding-bottom: 43px;
+    text-align: center;
+}
+
+
+.work {
+    margin-bottom: 44px;
+}
+
+.work__contnet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__title {
+    margin-bottom: 22px;
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 700;
+    text-align: justify;
+    color: var(--text);
+}
+
+.work__title {
+    text-align: justify;
+    color: var(--text);
+}
+
+.work__desc {
+    width: 825px;
+    height: 124px;
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: var(--text);
+    font-family: "Rubik";
+    font-weight: 400;
+     font-size: 20px;
+    text-align: justify;
+    
+}
+
+.media__link {
+    display: flex;
+    max-width: 255px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--white);
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.media__title {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 94%;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.media__text {
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 94%;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.media__headline {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--text);
+    margin-bottom: 22px;
+
+}
+
+.media__image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.footer{
+    background-color: var(--blue_1);
+    max-width: 100% ;
+    height: 140px;}
+.footer-ser{
+    margin-left:614px ;
+    padding: 40px 0;
+    margin-left: 550px
+}
+.contnet{
+    display: flex;
+}
+.footer-logo{
+    line-height: 100%;
+    font-family: "Rubik";
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 332px;
+    height: 60px;
+    padding: 40px 0;
+}
+.footer-email{
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white);
+}
+.footer-email1{
+    padding-left: 80px;
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+/* Sidebar asosi */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px; /* Boshlang'ich kenglik */
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: 0.4s ease;
+    z-index: 1000;
+    overflow: hidden;
+    border-right: 1px solid #e0e0e0;
+    padding-left: 20px;
+}
+
+/* Sidebar ustiga borganda kengayishi */
+.nav:hover {
+    width: 230px;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.nav-logo__img {
+    width: 50px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+    margin-left: 30px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: #939393;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.nav-icon {
+    width: 24px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 30px;
+    
+}
+
+.nav-text {
+    opacity: 0; /* Yopiq turganda matn ko'rinmaydi */
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav:hover .nav-text {
+    opacity: 1; /* Sidebar ochilganda matn ko'rinadi */
+}
+
+.nav-ava {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Asosiy kontent sidebar ostida qolib ketmasligi uchun */
+.wrapper {
+    margin-left: 80px; /* Sidebar kengligiga teng */
+    width: calc(100% - 80px);
+}
+
